@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style> 
+            @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+</style>
+        </style>
+
+</head>
+
+<body>
+     
+    <div class="parent">
+        <div class="home-header">
+            <header>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." />
+                    <button type="button-search">Search</button>
+                  </div>
+                <h1 class="web-name" style="bottom: 100px;">MRI Care </h1>
+                <div class="nav-bar">
+                  
+                    <nav>
+                      
+                    <a href="index.html">Home</a><br><br><br><a href="Patient-Resources.html">Patient
+                        Resources</a><a href="Appointment-Booking.html" style="color: rgb(255, 255, 255); background-color: rgb(107, 113, 113);">Appointment
+                        booking</a><br><br><br><a href="Services.html">Services</a><br><br><br><a
+                        href="Contact-Us.html">Contact </a></nav>
+                </div>
+
+            </header>
+        </div>
+        
+        <div class="home-main">
+            <main>        <section class="appointment-booking">
+              <h1 style="color: black;">Book an Appointment</h1>
+              <br><br>
+              <p style="color: black;">Use the form below to schedule your appointment with us. We look forward to assisting you!</p>
+  <br><br>
+              <form action="submit_appointment.php" method="POST" class="appointment-form">
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" name="name" required>
+  
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" name="phone" required>
+  
+                  <label for="service">Select Service:</label>
+                  <select id="service" name="service" required>
+                      <option value="">-- Please Choose a Service --</option>
+                      <option value="service1">Service One</option>
+                      <option value="service2">Service Two</option>
+                      <option value="service3">Service Three</option>
+                      <option value="service4">Service Four</option>
+                  </select>
+  
+                  <label for="date">Preferred Date:</label>
+                  <input type="date" id="date" name="date" required>
+  
+                  <label for="time">Preferred Time:</label>
+                  <input type="time" id="time" name="time" required>
+
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="7" required></textarea>
+                  <br>
+  
+                   <br>
+  
+                  <button type="submit">Submit Appointment</button>
+              </form></main>
+        </div>
+         
+            <footer class="footer">
+                <div class="footer-container">
+                  <h3>MRI Care</h3>
+                  <p>Follow us on social media for the latest updates:</p>
+                  <div class="social-icons">
+                    <a href="https://icons8.com/icon/118467/facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f">Facebook</i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter">Twitter</i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram">Instagram</i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in">linked in</i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube">Youtube
+                    </i></a>
+                  </div>
+                  <p>&copy; 2025 MRI Care. All rights reserved.</p>
+                </div>
+              </footer>
+        
+
+
+</body>
+
+</html>
